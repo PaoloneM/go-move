@@ -6,12 +6,12 @@ import (
 )
  
 func main() {
-	log.Debug("start")
+	log.Println("start")
 	oldLocation := "/var/www/html/test.txt"
 	newLocation := "/var/www/html/src/test.txt"
 	err := os.Rename(oldLocation, newLocation)
 	if err != nil {
 		log.Fatal(err)
 	}
-	log.Debug("end")
+	log.Println("end")
 }
