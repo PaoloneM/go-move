@@ -1,0 +1,7 @@
+version: "3.7"
+services:
+  move:
+    build: ./
+    volumes:
+      - "/Users/paolomorgano/dir1:/dir1:z"
+      - "/Users/paolomorgano/dir2:/dir2:z"
